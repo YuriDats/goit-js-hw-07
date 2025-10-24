@@ -13,8 +13,8 @@ function Foo(event) {
     }
 
     
-    if(elements.email.value.trim() || elements.password.value.trim() == ""){
-        console.log('All form fields must be filled in');
+    if(elements.email.value.trim() === "" || elements.password.value.trim() === ""){
+        alert('All form fields must be filled in');
     }
     else {
         console.log(`Email: ${info.email}, Password: ${info.password}`);
